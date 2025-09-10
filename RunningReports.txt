@@ -1,0 +1,15 @@
+In order to run reports using Allure reporting tools run the following command: 
+
+    dotnet test --results-directory Reports/Results --logger "trx"
+    
+In order to prepare the raw results into a report use the following command: 
+
+    allure generate Reports/Results --clean -o Reports/Report
+
+In order to open the results run the following command:
+
+    allure open Reports/Report
+    
+In order to combine the generating and opening steps using the following command: 
+
+    allure serve Reports/Results
