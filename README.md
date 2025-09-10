@@ -12,6 +12,7 @@ This repository is a C#-based web automation project designed to showcase my ski
 - **IDE:** Visual Studio
 
 **Test Runs**
+
 ![LoginExistingUser](https://github.com/user-attachments/assets/7ad0623e-3ec4-4d83-bc9d-2fa1e7a15c23)
 
 ![NewUserTransferFunds](https://github.com/user-attachments/assets/8c6f471b-7b82-45c7-89bd-0bd8e3df5ffd)
