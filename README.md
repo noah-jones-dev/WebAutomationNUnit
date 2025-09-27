@@ -1,5 +1,5 @@
-# WebAutomationCSharp
-This repository is a C#-based web automation project designed to showcase my skills with automating modern web applications using clean, maintainable, and scalable code.
+# WebAutomationNUnit
+This repository is an NUnite based web automation project designed to showcase my skills with automating modern web applications using clean, maintainable, and scalable code.
 
 **Tech Stack:**  
 - **Language:** C#  
