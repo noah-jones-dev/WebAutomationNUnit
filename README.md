@@ -121,54 +121,53 @@ allure open Reports/Report
 
 ## Project Structure
 
-- [Configuration](Configuration/) – Contains setup and configuration files for environments, browsers, and driver management.  
-    - [BrowserTypes](Configuration/BrowserTypes.cs) – Enum of supported browser types (e.g., Chrome, Firefox).  
-    - [Environments](Configuration/Environments/) – Holds environment-specific configuration such as base URLs and driver setup.  
-    - [MenuTypes](Configuration/MenuTypes/) – Enum for different menu navigation options.  
-    - [WebDriverFactory](Configuration/WebDriverFactory.cs) – Factory class responsible for creating and configuring WebDriver instances.  
-- [Framework](Framework/) – Core framework components that support reusable automation features.  
-    - [Fields](Framework/Fields/) – Encapsulates different types of web elements and their interactions.  
-        - [BaseField](BaseField.cs) – Base class for all field types with common functionality.  
-        - [ButtonField](ButtonField.cs) – Wrapper for button elements.  
-        - [CheckboxField](CheckboxField.cs) – Wrapper for checkbox elements.  
-        - [LinkField](LinkField.cs) – Wrapper for clickable link elements.  
-        - [SelectField](SelectField.cs) – Wrapper for dropdown and select elements.  
-        - [StaticField](StaticField.cs) – Wrapper for static text elements.  
-        - [TableField](TableField.cs) – Wrapper for tables, rows, and cells.  
-        - [TextField](TextField.cs) – Wrapper for input text fields.  
-    - [Helpers](Framework/Helpers/) – Utility classes for handling waits and window operations.  
-        - [Waits](Waits.cs) – Provides explicit wait conditions.  
-        - [WindowUtilities](WindowUtilities.cs) – Handles multiple window or tab interactions.  
-    - [Verifications](Framework/Verifications/) – Classes for verifying UI element states and properties.  
-        - [VerifyBase](VerifyBase.cs) – Base verification logic.  
-        - [VerifyButton](VerifyButton.cs) – Verifications for button elements.  
-        - [VerifyCheckbox](VerifyCheckbox.cs) – Verifications for checkbox elements.  
-        - [VerifyLink](VerifyLink.cs) – Verifications for links.  
-        - [VerifySelect](VerifySelect.cs) – Verifications for dropdown/select elements.  
-        - [VerifyStatic](VerifyStatic.cs) – Verifications for static text.  
-        - [VerifyTableCell](VerifyTableCell.cs) – Verifications for table cell values.  
-        - [VerifyText](VerifyText.cs) – Verifications for text input fields.  
-- [Pages](Pages/) – Page Object Models (POM) representing the application’s UI pages.  
-    - [AccountDetailsPage](AccountDetailsPage.cs) – Represents the account details page.  
-    - [AccountsOverviewPage](AccountsOverviewPage.cs) – Represents the accounts overview page with account list.  
-    - [BasePage](BasePage.cs) – Base class for common page functionality.  
-    - [BillPayPage](BillPayPage.cs) – Represents the bill payment page.  
-    - [HomePage](HomePage.cs) – Represents the home/landing page.  
-    - [LoginPage](LoginPage.cs) – Represents the login page.  
-    - [MenuPage](MenuPage.cs) – Represents the navigation menu.  
-    - [OpenNewAccountPage](OpenNewAccountPage.cs) – Represents the new account creation page.  
-    - [TransferCompletePage](TransferCompletePage.cs) – Represents the confirmation page after transfer.  
-    - [TransferFundsPage](TransferFundsPage.cs) – Represents the transfer funds page.  
-    - [WelcomePage](WelcomePage.cs) – Represents the welcome page after login/registration.  
-
-- [Reports](Reports/) – Directory for storing test results and reports.  
-    - [Report](Report/) – Generated Allure report files.  
-    - [Results](Results/) – Raw test execution results.  
-- [Tests](Tests/) – NUnit test suites organized by feature.  
-    - [AccountOverviewFeature](Tests/AccountOverviewFeature/) – Tests related to viewing account overviews.  
-        - [ViewAccountsOverview](ViewAccountsOverview.cs) – Test for viewing the accounts overview page.  
-    - [LoginFeature](Tests/LoginFeature/) – Tests related to login and registration.  
-        - [LoginExistingUser](LoginExistingUser.cs) – Test for logging in with an existing user.  
-        - [RegisterNewUser](RegisterNewUser.cs) – Test for registering a new user.  
-    - [TransferFundsFeature](Tests/TransferFundsFeature/) – Tests related to transferring funds.  
-        - [TransferFundsWithNewAccount](TransferFundsWithNewAccount.cs) – Test for transferring funds using a newly created account.  
+- [Configuration](./Configuration) – Contains setup and configuration files for environments, browsers, and driver management.  
+    - [BrowserTypes.cs](./Configuration/BrowserTypes.cs) – Enum of supported browser types (e.g., Chrome, Firefox).  
+    - [Environments](./Configuration/Environments) – Holds environment-specific configuration such as base URLs and driver setup.  
+    - [MenuTypes.cs](./Configuration/MenuTypes.cs) – Enum for different menu navigation options.  
+    - [WebDriverFactory.cs](./Configuration/WebDriverFactory.cs) – Factory class responsible for creating and configuring WebDriver instances.  
+- [Framework](./Framework) – Core framework components that support reusable automation features.  
+    - [Fields](./Framework/Fields) – Encapsulates different types of web elements and their interactions.  
+        - [BaseField.cs](./Framework/Fields/BaseField.cs) – Base class for all field types with common functionality.  
+        - [ButtonField.cs](./Framework/Fields/ButtonField.cs) – Wrapper for button elements.  
+        - [CheckboxField.cs](./Framework/Fields/CheckboxField.cs) – Wrapper for checkbox elements.  
+        - [LinkField.cs](./Framework/Fields/LinkField.cs) – Wrapper for clickable link elements.  
+        - [SelectField.cs](./Framework/Fields/SelectField.cs) – Wrapper for dropdown and select elements.  
+        - [StaticField.cs](./Framework/Fields/StaticField.cs) – Wrapper for static text elements.  
+        - [TableField.cs](./Framework/Fields/TableField.cs) – Wrapper for tables and table cells.  
+        - [TextField.cs](./Framework/Fields/TextField.cs) – Wrapper for input text fields.  
+    - [Helpers](./Framework/Helpers) – Utility classes for handling waits and window operations.  
+        - [Waits.cs](./Framework/Helpers/Waits.cs) – Provides explicit wait conditions.  
+        - [WindowUtilities.cs](./Framework/Helpers/WindowUtilities.cs) – Handles multiple window or tab interactions.  
+    - [Verifications](./Framework/Verifications) – Classes for verifying UI element states and properties.  
+        - [VerifyBase.cs](./Framework/Verifications/VerifyBase.cs) – Base verification logic.  
+        - [VerifyButton.cs](./Framework/Verifications/VerifyButton.cs) – Verifications for button elements.  
+        - [VerifyCheckbox.cs](./Framework/Verifications/VerifyCheckbox.cs) – Verifications for checkbox elements.  
+        - [VerifyLink.cs](./Framework/Verifications/VerifyLink.cs) – Verifications for links.  
+        - [VerifySelect.cs](./Framework/Verifications/VerifySelect.cs) – Verifications for dropdown/select elements.  
+        - [VerifyStatic.cs](./Framework/Verifications/VerifyStatic.cs) – Verifications for static text.  
+        - [VerifyTableCell.cs](./Framework/Verifications/VerifyTableCell.cs) – Verifications for table cell values.  
+        - [VerifyText.cs](./Framework/Verifications/VerifyText.cs) – Verifications for text input fields.  
+- [Pages](./Pages) – Page Object Models (POM) representing the application’s UI pages.  
+    - [AccountDetailsPage.cs](./Pages/AccountDetailsPage.cs) – Represents the account details page.  
+    - [AccountsOverviewPage.cs](./Pages/AccountsOverviewPage.cs) – Represents the accounts overview page with account list.  
+    - [BasePage.cs](./Pages/BasePage.cs) – Base class for common page functionality.  
+    - [BillPayPage.cs](./Pages/BillPayPage.cs) – Represents the bill payment page.  
+    - [HomePage.cs](./Pages/HomePage.cs) – Represents the home/landing page.  
+    - [LoginPage.cs](./Pages/LoginPage.cs) – Represents the login page.  
+    - [MenuPage.cs](./Pages/MenuPage.cs) – Represents the navigation menu.  
+    - [OpenNewAccountPage.cs](./Pages/OpenNewAccountPage.cs) – Represents the new account creation page.  
+    - [TransferCompletePage.cs](./Pages/TransferCompletePage.cs) – Represents the confirmation page after transfer.  
+    - [TransferFundsPage.cs](./Pages/TransferFundsPage.cs) – Represents the transfer funds page.  
+    - [WelcomePage.cs](./Pages/WelcomePage.cs) – Represents the welcome page after login/registration.  
+- [Reports](./Reports) – Directory for storing test results and reports.  
+    - [Report](./Reports/Report) – Generated Allure report files.  
+    - [Results](./Reports/Results) – Raw test execution results.  
+- [Tests](./Tests) – NUnit test suites organized by feature.  
+    - [AccountOverviewFeature](./Tests/AccountOverviewFeature) – Tests related to viewing account overviews.  
+        - [ViewAccountsOverview.cs](./Tests/AccountOverviewFeature/ViewAccountsOverview.cs) – Test for viewing the accounts overview page.  
+    - [LoginFeature](./Tests/LoginFeature) – Tests related to login and registration.  
+        - [LoginExistingUser.cs](./Tests/LoginFeature/LoginExistingUser.cs) – Test for logging in with an existing user.  
+        - [RegisterNewUser.cs](./Tests/LoginFeature/RegisterNewUser.cs) – Test for registering a new user.  
+    - [TransferFundsFeature](./Tests/TransferFundsFeature) – Tests related to transferring funds.  
+        - [TransferFundsWithNewAccount.cs](./Tests/TransferFundsFeature/TransferFundsWithNewAccount.cs) – Test for transferring funds using a newly created account.  
