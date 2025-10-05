@@ -1,5 +1,5 @@
 
-# Web Automation C# Project
+# Web Automation NUnit Project
 
 ## Description
 
